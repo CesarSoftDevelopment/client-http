@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0337f2a5b8.js" crossorigin="anonymous"></script>
+    <title>Mercado Livre</title>
+
+    <style>
+        .espacamento {
+            margin-top: 10%;
+            margin-left: 0.5%;
+        }
+
+        .fundo {
+            background-color: #e7e7e7;
+        }
+
+       
+
+        .navbar {
+            background-color: #fff159;
+            padding: 32px;
+        }
+
+        .fa-style {
+            color: #7f7e70;
+        }
+
+        .input-form {
+            width: 629px;
+            color: #000;
+            border-color: #e7e7e7;
+        }
+
+        .mlstatic {
+            width: 340px;
+        }
+
+        .espacamento-card {
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body class="fundo" id="corpo-pagina">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__small.png">
+                </a>
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="input-form" type="text"
+                                placeholder="Buscar produtos, marcas e muito mais...">
+
+                            <button class="btn btn-outline btn-background" type="submit">
+                                <i class="fas fa-search fa-style"></i>
+                            </button>
+                        </form>
+                    </div>
+            
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item">
+                                <img class="mlstatic"  src="https://http2.mlstatic.com/D_NQ_670223-MLA49707690918_042022-OO.webp">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+    </header><!-- fim cabecalho -->
+
+    <!--Card-->
+    <div id="divPrincipal" class="row row-cols-md-5 espacamento-card espacamento">
+
+    </div>
+
+    <!--Card-->
+
+    <div id="errors">
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+
+</html>
