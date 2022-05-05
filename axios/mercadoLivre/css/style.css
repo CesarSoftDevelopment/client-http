@@ -1,0 +1,76 @@
+.espacamento {
+    margin-top: 10%;
+    margin-left: 0.5%;
+}
+
+.fundo {
+    background-color: #e7e7e7;
+}
+
+
+.navbar {
+    background-color: #fff159;
+    padding: 12px;
+}
+
+.fa-style {
+    color: #7f7e70;
+}
+
+.input-form {
+    border: none;
+    width: 629px;
+    color: #000;
+    border-color: #e7e7e7;
+}
+
+.mlstatic {
+    width: 340px;
+}
+
+.espacamento-card {
+    padding: 15px;
+}
+
+.btn-background {
+    background-color: #fff;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #474646;
+}
+.dropdown-menu {
+    background-color: #333333;
+    
+}
+.dropdown-menu a{
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    background-color: #3483fa;
+    color: #fff;
+}
+
+.navbar-nav {
+    margin-top: 60px;
+}
+
+.navbar-nav li {
+    padding: 5px;
+    
+
+}
+
+.navbar-nav li a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.753);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-nav li a:hover {
+    color: #000;
+    text-decoration: none;
+}
