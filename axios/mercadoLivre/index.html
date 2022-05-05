@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0337f2a5b8.js" crossorigin="anonymous"></script>
+
     <title>Mercado Livre</title>
 
     <style>
@@ -19,11 +20,10 @@
             background-color: #e7e7e7;
         }
 
-       
 
         .navbar {
             background-color: #fff159;
-            padding: 32px;
+            padding: 12px;
         }
 
         .fa-style {
@@ -31,6 +31,7 @@
         }
 
         .input-form {
+            border: none;
             width: 629px;
             color: #000;
             border-color: #e7e7e7;
@@ -44,41 +45,102 @@
             padding: 15px;
         }
 
+        .btn-background {
+            background-color: #fff;
+        }
+
+        .dropdown a {
+            text-decoration: none;
+            color: #474646;
+        }
+        .dropdown-menu {
+            background-color: #333333;
+            
+        }
+        .dropdown-menu a{
+            color: #fff;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #3483fa;
+            color: #fff;
+        }
+
+        .navbar-nav {
+            margin-top: 60px;
+        }
+
+        .navbar-nav li {
+            padding: 5px;
+            
+
+        }
+
+        .navbar-nav li a {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.753);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-nav li a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+        
     </style>
 
 </head>
 
 <body class="fundo" id="corpo-pagina">
-
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__small.png">
+                <a href="index.html" class="navbar-brand" tabindex="2">
+                    <img
+                        src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__small.png">
+                  
                 </a>
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="input-form" type="text"
-                                placeholder="Buscar produtos, marcas e muito mais...">
 
-                            <button class="btn btn-outline btn-background" type="submit">
-                                <i class="fas fa-search fa-style"></i>
-                            </button>
-                        </form>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-            
+                </div>
+
                 <div class="collapse navbar-collapse" id="nav-principal">
-                    <ul class="navbar-nav ml-auto">
+                    <ul id="space" class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-item">
-                                <img class="mlstatic"  src="https://http2.mlstatic.com/D_NQ_670223-MLA49707690918_042022-OO.webp">
+                               Crie sua conta
                             </a>
                         </li>
-                    </ul>
 
+                        <li class="nav-item">
+                            <a class="nav-item">
+                               Entre
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-item">
+                               Compras
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </nav>
     </header><!-- fim cabecalho -->
 
@@ -94,6 +156,12 @@
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/produtos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

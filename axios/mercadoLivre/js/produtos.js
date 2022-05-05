@@ -14,7 +14,7 @@ body.onload = function() {
     let descricaoProduto = '';
     let textCarrinho = '';
 
-    axios.get(`${endpointMercadoLivre}/sites/MLB/search?category=MLB271599`)
+    axios.get(`${endpointMercadoLivre}/sites/MLB/search?category=MLB5726`)
         .then(function(response){
             let arrayRetornoWS = response.data.results;
             console.log(arrayRetornoWS);
