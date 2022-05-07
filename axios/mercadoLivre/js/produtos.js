@@ -1,7 +1,6 @@
 let div = document.getElementById('errors');
 let body = document.getElementById('corpo-pagina');
 let divPrincipal = document.getElementById('divPrincipal');
-let categorias = document.getElementById('categorias');
 
 let endpointMercadoLivre = 'https://api.mercadolibre.com';
 
@@ -14,9 +13,8 @@ body.onload = function() {
     let textPreco = '';
     let descricaoProduto = '';
     let textCarrinho = '';
-    let textCateg = '';
 
-    axios.get(`${endpointMercadoLivre}/sites/MLB/search?category=MLB5726`)
+    axios.get(`${endpointMercadoLivre}/sites/MLB/search?category=MLB271599`)
         .then(function(response){
             let arrayRetornoWS = response.data.results;
             console.log(arrayRetornoWS);
@@ -32,14 +30,12 @@ body.onload = function() {
         let img = document.createElement('img');
         let titulo = document.createElement('h5');
         let descricao = document.createElement('p');
-        let categ = document.createElement('a');
         // let button = document.createElement('a');
 
         // atribuição as divs
         div1.setAttribute('class', 'card h-100');
         div2.setAttribute('class', 'card-body');
         div3.setAttribute('class', 'col mb-4');
-        categ.setAttribute('class', 'dropdown-item');
 
         // atribuição aos elementos que irão dentro das divs
         img.setAttribute('src', arrayRetornoWS[i].thumbnail);
@@ -55,7 +51,6 @@ body.onload = function() {
         textPreco = document.createTextNode(`R$ ${arrayRetornoWS[i].price}`)
         descricaoProduto = document.createTextNode(arrayRetornoWS[i].title);
         textCarrinho = document.createTextNode('Adicionar ao carrinho');
-        textCateg = document.createTextNode()
         
         // adicionar os textos nos elementos
         titulo.appendChild(textPreco);
